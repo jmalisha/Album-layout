@@ -2,6 +2,8 @@ import {
   AppBar,
   Toolbar,
   Grid,
+  Stack,
+  Input,
   Card,
   Typography,
   CssBaseline,
@@ -13,6 +15,7 @@ import {
 } from '@mui/material';
 
 import { PhotoCamera } from '@mui/icons-material';
+import IconButton from '@mui/material/IconButton';
 import useStyles from './styles';
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -83,7 +86,16 @@ function App() {
               </Grid>
             ))}
           </Grid>
+          <div className={classes.footerText}>
+            <Typography variant="h5" align="center">
+              Footer
+            </Typography>
+            <div className={classes.footer}><Typography align="center">Something here to give the footer a purpose!</Typography>
+            <Typography align="center">Copyright © Your Website 2021.</Typography></div>
+            
+          </div>
         </Container>
+        
       </main>
     </>
   );

@@ -31,6 +31,13 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
   },
+  footerText: {
+    marginTop: 80,
+  },
+  footer: {
+    color: 'gray',
+    marginTop: 20,
+  },
 }));
 
 export default useStyles;
